@@ -31,9 +31,9 @@ app.use(
     legacyHeaders: false,
   }),
 );
-app.use(helmet);
-app.use(cors);
-app.use(xss);
+app.use(helmet());
+app.use(cors());
+app.use(xss());
 
 // routes
 app.get("/", (req, res) => {
